@@ -1,4 +1,4 @@
-package test.course.in28minutes.threads;
+package test.courses.in28minutes.threads;
 
 import java.util.concurrent.TimeUnit;
 

@@ -1,4 +1,4 @@
-package test.course.in28minutes.collections;
+package test.courses.in28minutes.collections;
 
 import java.util.ArrayList;
 import java.util.HashMap;

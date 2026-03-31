@@ -1,4 +1,4 @@
-package test.course.in28minutes.fp;
+package test.courses.in28minutes.fp;
 
 import java.util.List;
 import java.util.stream.Collectors;

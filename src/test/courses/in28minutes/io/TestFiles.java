@@ -1,4 +1,4 @@
-package test.course.in28minutes.io;
+package test.courses.in28minutes.io;
 
 import java.io.IOException;
 import java.nio.file.Files;

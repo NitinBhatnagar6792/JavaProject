@@ -1,4 +1,4 @@
-package test.course.in28minutes.generics;
+package test.courses.in28minutes.generics;
 
 import java.util.ArrayList;
 import java.util.List;

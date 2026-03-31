@@ -1,4 +1,4 @@
-package test.course.in28minutes.section20;
+package test.courses.in28minutes.section20;
 
 import java.util.List;
 
