@@ -69,18 +69,20 @@ public class TestExternalizable {
 		System.out.println("circle:"+circle);
 		File file = Paths.get("./resources/circle.er").toFile();
 		
-		FileOutputStream fos = new FileOutputStream(file);
-		ObjectOutputStream oos = new ObjectOutputStream(fos);
-		oos.writeObject(circle);
-		oos.close();
-		fos.close();
+		try (FileOutputStream fos = new FileOutputStream(file);
+			 ObjectOutputStream oos = new ObjectOutputStream(fos)) {
+			oos.writeObject(circle);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}		
 		
-		FileInputStream fis = new FileInputStream(file);
-		ObjectInputStream ois = new ObjectInputStream(fis);
-		Circle circleFromFile = (Circle)ois.readObject();
-		System.out.println("circleFromFile:"+circleFromFile);
-		ois.close();
-		fis.close();
+		try (FileInputStream fis = new FileInputStream(file);
+			 ObjectInputStream ois = new ObjectInputStream(fis)) {
+			Circle circleFromFile = (Circle)ois.readObject();
+			System.out.println("circleFromFile:"+circleFromFile);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 
 	}
 
