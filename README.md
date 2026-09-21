@@ -1,22 +1,11 @@
-# Java Programming Learning
-
-This repository contains my Java programming exercises and practice
-programs created while learning Java
-
-## Purpose
-
-This is a personal learning repository created to practice and
-reinforce Java programming concepts.
-
-
 # Java Learning Repository
 
 This repository contains my Java programming exercises and practice code created while learning through various courses.
 
+
 ## Courses
 
-
-### Java Programming for Complete Beginners
+### 01 Java Programming for Complete Beginners
 
 * **Course:** Java Programming for Complete Beginners
 * **Instructor:** in28minutes
@@ -25,4 +14,4 @@ This repository contains my Java programming exercises and practice code created
 * **Completion Date:** 14-Apr-2026
 * **Code:** `courses/in28minutes`
 
-Please Note: More Java courses and their corresponding practice exercises will be added to the `courses` directory as I continue learning.
+**Please Note**: More Java courses and their corresponding practice exercises will be added to the `courses` directory as I continue learning.
