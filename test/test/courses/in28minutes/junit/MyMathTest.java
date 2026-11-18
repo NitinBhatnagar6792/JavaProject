@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-import courses.in28minutes.junit.MyMath;
+import courses.in28minutes.course01.junit.MyMath;
 
 class MyMathTest {
 	MyMath math = new MyMath();
