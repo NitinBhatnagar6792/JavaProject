@@ -22,7 +22,7 @@ public class HandsOnSection02Step06 {
 		// Exercise 04: print square of odd numbers using method reference
 		printSquareOfOddNumbers(numbers);
 		
-		}
+	}
 	
 	// Exercise 01: print square of even numbers
 	private static void printSquareOfEvenNumbers(List<Integer> numbers) {
