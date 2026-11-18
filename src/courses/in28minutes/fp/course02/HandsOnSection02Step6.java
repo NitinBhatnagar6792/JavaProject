@@ -19,6 +19,9 @@ public class HandsOnSection02Step6 {
 		// Exercise 03: print the number of characters in course
 		printNumberOfCharectersInCourse(courses);
 
+		// Exercise 04: print square of odd numbers using method reference
+		printSquareOfOddNumbers(numbers);
+		
 		}
 	
 	// Exercise 01: print square of even numbers
@@ -64,6 +67,27 @@ public class HandsOnSection02Step6 {
 		
 		System.out.println("-----------------------Output end--------------------");
 		
+	}
+
+	private static boolean isOdd(Integer i) {
+		
+		return i %2 != 0;
+		
+	}
+	
+	// Exercise 04: print square of odd numbers using method reference
+	private static void printSquareOfOddNumbers(List<Integer> numbers) {
+		System.out.println("======================================================");
+		System.out.println("Exercise 04: print square of odd numbers using method reference");
+		System.out.println("Input List = "+ numbers);
+		System.out.println("-----------------------Output start--------------------");
+		
+		numbers.stream()
+		.filter(HandsOnSection02Step6::isOdd)
+		.map(i -> "Square of %s \t= %s".formatted(i, i*i))
+		.forEach(System.out::println);
+		
+		System.out.println("-----------------------Output end--------------------");
 	}
 	
 }
