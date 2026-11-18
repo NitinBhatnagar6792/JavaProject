@@ -2,7 +2,7 @@ package courses.in28minutes.fp.course02.section02;
 
 import java.util.List;
 
-public class HandsOnSection02Step6 {
+public class HandsOnSection02Step06 {
 
 	public static void main(String[] args) {
 		
@@ -83,7 +83,7 @@ public class HandsOnSection02Step6 {
 		System.out.println("-----------------------Output start--------------------");
 		
 		numbers.stream()
-		.filter(HandsOnSection02Step6::isOdd)
+		.filter(HandsOnSection02Step06::isOdd)
 		.map(i -> "Square of %s \t= %s".formatted(i, i*i))
 		.forEach(System.out::println);
 		
