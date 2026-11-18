@@ -1,4 +1,4 @@
-package courses.in28minutes.fp.course02;
+package courses.in28minutes.fp.course02.section02;
 
 import java.util.List;
 
