@@ -12,7 +12,7 @@ This repository contains my Java programming exercises and practice code created
 * **Course URL:** [Java Programming for Complete Beginners](https://www.udemy.com/course/java-programming-tutorial-for-beginners)
 * **Certificate:** [see my course completion Certificate](https://www.udemy.com/certificate/UC-b4c0d1d4-591c-48cd-b011-d7baa099ca75/)
 * **Completion Date:** 14-Apr-2026
-* **Package:** `courses/in28minutes.course01`
+* **Package:** `courses.in28minutes.course01`
 
 
 ### 02 Learn Java Functional Programming with Lambdas & Streams
