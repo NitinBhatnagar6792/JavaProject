@@ -3,7 +3,7 @@ package courses.in28minutes.course02.section03;
 import java.util.List;
 
 /**
- * This Class covers hands on for Section 03 -> points Step 01 to Step04
+ * This Class covers hands on for Section 03 -> points Step 01 to Step 04
  * Mainly related to using stream reduce() function 
  */
 public class HandsOnSection03Step01To04 {
