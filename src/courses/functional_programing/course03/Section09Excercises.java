@@ -40,8 +40,7 @@ public class Section09Excercises {
 		
 		System.out.println("Input list="+cars);
 		long count = cars.stream()
-				.filter(c-> c.color()
-				.equalsIgnoreCase(color))
+				.filter(c-> c.color().equalsIgnoreCase(color))
 				.count();
 		System.out.printf("number of cars having '%s' color is %s\n", color, count);
 	}
@@ -52,8 +51,7 @@ public class Section09Excercises {
 		System.out.println("Input list="+cars);
 		// recommended approach by using mapToDouble() & min()
 		double minPrice1 = cars.stream()
-			.filter(c-> c.color()
-			.equalsIgnoreCase(color))
+			.filter(c-> c.color().equalsIgnoreCase(color))
 			.mapToDouble(c -> c.price())
 			.min()
 			.orElse(0d);
@@ -61,16 +59,14 @@ public class Section09Excercises {
 
 		// using Collectors.minBy() & Comparator.comparingDouble()		
 		Car minPricedCar2 = cars.stream()
-				.filter(c-> c.color()
-				.equalsIgnoreCase(color))
+				.filter(c-> c.color().equalsIgnoreCase(color))
 				.collect(Collectors.minBy(Comparator.comparingDouble(c -> c.price())))
 				.orElse(null);
 		System.out.printf("Approach2: '%s' colored car having miminum price is : %s\n", color, minPricedCar2);
 	
 		// using Collectors.minBy() & Comparator.comparing()
 		Car minPricedCar3 = cars.stream()
-				.filter(c-> c.color()
-				.equalsIgnoreCase(color))
+				.filter(c-> c.color().equalsIgnoreCase(color))
 				.collect(Collectors.minBy(Comparator.comparing(c -> c.price())))
 				.orElse(null);
 		System.out.printf("Approach3: '%s' colored car having miminum price is : %s\n", color, minPricedCar3);
@@ -118,7 +114,7 @@ public class Section09Excercises {
 			.orElse(0.d);
 		System.out.printf("Approach2: sum of prices for cars having model '%s' is %s\n", model, sum2);
 		
-		// below is not a good Approach, however it is bgood for understanding reduce() method
+		// below is not a good Approach, however it is good for understanding reduce() method
 		Car sum3 = cars.stream()
 				.filter(c -> c.model().equalsIgnoreCase(model))
 				.reduce((c1, c2) -> {
@@ -133,8 +129,9 @@ public class Section09Excercises {
 	private static void summaryStatisticsOnCarPrice(List<Car> cars) {
 		
 		DoubleSummaryStatistics stats = cars.stream()
-		.mapToDouble(c -> c.price())
-		.summaryStatistics();
+				.mapToDouble(c -> c.price())
+				.summaryStatistics();
+		
 		System.out.println("Input list="+cars);
 		System.out.println("stats="+stats);
 	}

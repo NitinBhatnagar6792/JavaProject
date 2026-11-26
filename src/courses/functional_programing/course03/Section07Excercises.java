@@ -16,7 +16,7 @@ public class Section07Excercises {
 		filterCarsByColor(cars, "Blue");
 
 		System.out.println("*************** printAllTheCarMaker() *******************************");
-		// find and pring all the car make
+		// find and print all the car make
 		printAllTheCarMake(cars);
 		
 		System.out.println("*************** printAverageCarPrice() *******************************");
@@ -36,7 +36,7 @@ public class Section07Excercises {
 			.forEach(System.out::println);
 	}
 
-	// find and pring all the car make
+	// find and print all the car make
 	private static void printAllTheCarMake(List<Car> cars) {
 		
 		System.out.println("Total Input cars count="+cars.size());
