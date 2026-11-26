@@ -24,4 +24,13 @@ This repository contains my Java programming exercises and practice code created
 * **Completion Date:** 23-Nov-2026
 * **Package:** `courses.in28minutes.course02`
 
+### 03 Java Streams API Developer Guide
+
+* **Course:** Java Streams API Developer Guide(Functional Programming with Java 8)
+* **Instructor:** Nelson Jamal
+* **Course URL:** [Java Streams API Developer Guide](https://www.udemy.com/course/java-streams/)
+* **Certificate:** [see my course completion Certificate](https://www.udemy.com/certificate/UC-dc31afc9-ada1-492e-bf2f-a7bb79ea08ec/)
+* **Completion Date:** 26-Nov-2026
+* **Package:** `courses.functional_programing.course03`
+
 **Please Note**: More Java courses and their corresponding practice exercises will be added to the `courses` directory as I continue learning.
